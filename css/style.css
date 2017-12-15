@@ -11,6 +11,7 @@ body {
 .player {
   margin: 5% auto 0 auto;
   text-align: center;
+  display: inline-block;
   width: 200px;
   border: 5px outset white;
   padding-bottom: 25px;
@@ -47,5 +48,5 @@ body {
 button {
   width: 150px;
   height: 80px;
-  font-size: 25px;
+  font-size: 15px;
 }
