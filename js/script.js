@@ -28,6 +28,7 @@ function startUp(){
   console.log("Start");
   console.log("p1: "+playerOneScore);
   console.log("p2: "+playerTwoScore);
+  $('.score').append("-");
 }
 
 function clickedPOne() {
@@ -37,6 +38,7 @@ function clickedPOne() {
   console.log("p1: "+playerOneScore);
 
   if (playerOneScore == 4) {
+    $('#p1score').empty();
     $('#p1score').append("S");
   }
   else if (playerOneScore == 3) {
@@ -61,6 +63,7 @@ function clickedPTwo() {
   console.log("p2: "+playerTwoScore);
 
   if (playerTwoScore == 4) {
+    $('#p2score').empty();
     $('#p2score').append("S");
   }
   else if (playerTwoScore == 3) {
@@ -90,4 +93,6 @@ function restart() {
   $('.score').empty();
   $('.restart').hide();
   $('.player').show();
+  $('.score').append("-");
+
 }
