@@ -5,15 +5,23 @@ body, html {
 
 body {
   background-color: black;
+  text-align: center;
 }
 
 .player {
-  margin: 5% auto 5% auto;
+  margin: 5% auto 0 auto;
   text-align: center;
   width: 200px;
   border: 5px outset white;
   padding-bottom: 25px;
   background-color: black;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
 }
 
 #p1 {
@@ -21,11 +29,23 @@ body {
 }
 
 #p2 {
-  color: royalblue;
+  color: blue;
 }
 
 .score {
   height: 100px;
   line-height: 50px;
   font-size: 50px;
+}
+
+.restart {
+  margin: auto;
+  margin-top: 200px;
+  display: none;
+}
+
+button {
+  width: 150px;
+  height: 80px;
+  font-size: 25px;
 }

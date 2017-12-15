@@ -17,10 +17,10 @@ $(document).ready(function() {
   startUp ();
 
   // start function on p1 button click
-  $('#p1button').click(clickedPOne);
+  $('#p1').click(clickedPOne);
 
   // start function on p2 button click
-  $('#p2button').click(clickedPTwo);
+  $('#p2').click(clickedPTwo);
 
 });
 
@@ -50,7 +50,7 @@ function clickedPOne() {
   }
   else if (playerOneScore == 0) {
     $('#p1score').append("E");
-    $('#p2score').append("!");
+    restartScreen();
   }
 }
 
@@ -74,6 +74,20 @@ function clickedPTwo() {
   }
   else if (playerTwoScore == 0) {
     $('#p2score').append("E");
-    $('#p1score').append("!");
+    restartScreen();
   }
+}
+
+function restartScreen() {
+  $('.player').hide();
+  $('.restart').show();
+  $('.restart').click(restart);
+}
+
+function restart() {
+  playerOneScore = 5;
+  playerTwoScore = 5;
+  $('.score').empty();
+  $('.restart').hide();
+  $('.player').show();
 }
