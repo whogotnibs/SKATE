@@ -94,5 +94,4 @@ function restart() {
   $('.restart').hide();
   $('.player').show();
   $('.score').append("-");
-
 }
